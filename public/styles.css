@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+.pages-list {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.form-check-input {
+    cursor: pointer;
+    border-color: #007bff;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.form-check-label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-form,
+.story-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.btn {
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.alert {
+    border-radius: 4px;
+    border: none;
+}
+
+.result-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.nav-tabs .nav-link {
+    color: #666;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .col-md-3,
+    .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+small.text-muted {
+    display: block;
+    margin-top: 5px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
